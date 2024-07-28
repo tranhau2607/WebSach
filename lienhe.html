@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>2TM BOOKS</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo"> <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <a href="giohang.html">
+                <div class="fa fa-solid fa-shopping-cart" id="cart-btn"><span class="totalQuantity"></span></div>
+            </a>
+
+            <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+            <a href="login.html" id="login-link">
+                <div id="login-btn" class="fa fa-solid fa-user"></div>
+            </a>
+            <div id="User" class="User" style="display: none">
+                <div class="moxuong">
+                    <button class="mo"></button>
+                    <div class="moxuong-content">
+                        <a href="#">Thông tin đơn hàng</a>
+                        <a href="#">Thông tin cá nhân</a>
+                        <a id="logoutBtn" href="">Đăng xuất</a>
+
+                    </div>
+                </div>
+                <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+                <script type="module" src="/script/user.js"></script>
+            </div>
+
+
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm...">
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class="tieude container">
+        <h1> LIÊN HỆ VỚI 2TM BOOKS</h1>
+        <hr>
+    </div>
+    <div class="tranglienhe container">
+        <div class="lienhe">
+            <div class="noidung">
+                <p><i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM <br>
+                    <i class="fa-solid fa-phone"></i> 0364983427 <br>
+                    <i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com
+                </p>
+                <h2> Hoặc gửi thắc mắc cho chúng tôi: </h2>
+                <form>
+                    <input type="text" id="firstName" placeholder=" Tên của bạn:" required>
+                    <input type="email" id="email" placeholder=" Email của bạn:" required>
+                    <input type="mobile" id="mobile" placeholder=" Số điện thoại của bạn:" required>
+                    <h4> Bạn đang gặp vấn đề gì?</h4>
+                    <textarea required></textarea>
+                    <input type="submit" value="Gửi" id="button">
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0672790781086!2d106.62609067451758!3d10.806159158645636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1722166488008!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Tải App</h2>
+                    <p>Tải xuống App cho Android và IOS.</p>
+                    <div class="app-logo">
+                        <img src="./image/app-2store.png">
+                        <img src="./image/google-play-png-logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./image/logo_2tm.png">
+                </div>
+
+                <div class="footer-col-3">
+                    <h2>Thông tin liên hệ:</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM</li>
+                        <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                        <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright© 2024</p>
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+    <script src="/script/cart.js"></script>
+    <script>window.addEventListener('DOMContentLoaded', () => {
+            updateCartQuantityDisplay();
+        });</script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <!-- Bootstrap -->
+
+    <!-- nouislider -->
+
+    <title>GIỎ HÀNG 2TM BOOKS</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="logo">
+            <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <a href="giohang.html">
+                <div class="fa fa-solid fa-shopping-cart" id="cart-btn"><span class="totalQuantity"></span></div>
+            </a>
+            <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+            <a href="login.html" id="login-link">
+                <div id="login-btn" class="fa fa-solid fa-user"></div>
+            </a>
+            <div id="User" class="User" style="display: none">
+                <div class="moxuong">
+                    <button class="mo"></button>
+                    <div class="moxuong-content">
+                        <a href="#">Thông tin đơn hàng</a>
+                        <a href="#">Thông tin cá nhân</a>
+                        <a id="logoutBtn" href="">Đăng xuất</a>
+                    </div>
+                </div>
+                <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+                <script type="module" src="/script/user.js"></script>
+            </div>
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm..." />
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class=" container">
+        <div class="name_cart">
+            <h1>Giỏ hàng của bạn ( <span class="totalQuantity"></span> )</h1>
+        </div>
+        <div class="main_cart">
+            <div class="cart" id="cart" style="display: none;">
+                <table>
+                    <tr class="tieude_cart">
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá tiền</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tbody id="cartItems">
+                        <!-- Đây là vị trí hiển thị sản phẩm trong giỏ hàng -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Form thanh toán -->
+            <div id="checkoutForm" style="display: none;">
+                <!-- Đặt các phần tử của form thanh toán ở đây -->
+
+                <div class="wrapper-total-card">
+                    <div class="flex-space-between thanh_tien">
+                        <h2>Thành tiền</h2>
+                        <p id="thanh-tien"><span id="totalPrice"></span></p>
+                    </div>
+                    <div class="flex-space-between tong_tien">
+                        <h2>Tổng Số Tiền (gồm VAT)</h2>
+                        <p id="final-total"><span id="totalPriceAll"></span></p>
+                    </div>
+                    <div>
+                        <button class="btn-thanh-toan" id="checkoutButton" style="cursor: pointer;">THANH TOÁN
+                        </button>
+                        <p class="text-red">(Giảm giá trên web chỉ áp dụng cho bán lẻ)</p>
+                        <script>
+                            const checkoutButton = document.getElementById('checkoutButton');
+                            checkoutButton.addEventListener('click', function () {
+                                window.location.href = 'thanhtoan.html'; // Thay "thanh_toan.html" bằng URL của trang thanh toán thực tế
+                            });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Thông báo khi giỏ hàng trống -->
+        <div id="emptyCartMessage" style="display: none;">
+            <p style="font-size: 3rem;text-align: center;">Giỏ hàng của bạn đang trống.</p>
+        </div>
+        <!-- Thông báo khi giỏ hàng trống khi chưa đăng nhập -->
+        <div id="emptyCartLoginMessage" style="display: none;">
+            <p style="font-size: 3rem;text-align: center;">Đăng nhập để xem giỏ hàng của bạn</p>
+        </div>
+        <div class="button-giohang">
+            <a href="sanpham.html"><button class="button1">&#8592; Tiếp tục xem sản phẩm</button></a>
+            <button id="updateButton" class="button2">Cập nhật giỏ hàng</button>
+            <button id="clearCartBtn" class="button2">Xóa tất cả giỏ hàng</button>
+        </div>
+    </div>
+
+    <div class="footer absolute-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Tải App</h2>
+                    <p>Tải xuống App cho Android và IOS.</p>
+                    <div class="app-logo">
+                        <img src="./image/app-2store.png" />
+                        <img src="./image/google-play-png-logo.png" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./image/logo_2tm.png" />
+                </div>
+
+                <div class="footer-col-3">
+                    <h2>Thông tin liên hệ</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i> 0364983427</li>
+                        <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright© 2024</p>
+        </div>
+    </div>
+    <script type="module" src="/script/products.js"> </script>
+    <script type="module" src="/script/cart.js"></script>
+
+</body>
+
+</html>

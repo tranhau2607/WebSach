@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>2TM BOOKS</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo"> <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <a href="giohang.html">
+                <div class="fa fa-solid fa-shopping-cart" id="cart-btn"><span class="totalQuantity"></span></div>
+              </a>   
+            <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+            <a href="login.html" id="login-link">
+                <div id="login-btn" class="fa fa-solid fa-user"></div>
+            </a>
+            <div id="User" class="User" style="display: none">
+                <div class="moxuong">
+                    <button class="mo"></button>
+                    <div class="moxuong-content">
+                        <a href="#">Thông tin đơn hàng</a>
+                        <a href="#">Thông tin cá nhân</a>
+                        <a id="logoutBtn" href="">Đăng xuất</a>
+                    </div>
+                </div>
+                <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+                <script type="module" src="/script/user.js"></script>
+            </div>
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm...">
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <section class="home" id="home">
+        <div class="content container">
+            <h3> Hãy để <span>2TM Books</span> <br>đồng hành cùng bạn trên hành trình tri thức! </h3>
+            <a href="sanpham.html" class="btn1">MUA NGAY</a>
+        </div>
+    </section>
+
+    <!-- -->
+    <section class="about" id="about">
+
+        <div class="row container">
+            <div class="container">
+                <img src="./image/bestseller.jpg">;
+                <h3> Best sellers </h3>
+            </div>
+
+            <div class="content-about">
+                <h1 class="about-us">VỀ CHÚNG TÔI </h1>
+                <hr>
+                <h3> Tại sao chọn <span>2TM Books?</h3>
+                <p> Nếu bạn là một người yêu sách, muốn tham khảo nhiều loại sách hơn nhưng lại không có thời gian.
+                    <span>2TM Books</span> - là sự lựa chọn cho bạn, bất cứ ở nơi đâu bạn cũng có thể lựa chọn một cuốn
+                    sách phù hợp, giá cả cạnh tranh và nhiều khuyến mãi. <span>2TM Books</span> sẽ hỗ trợ bạn tìm kiếm
+                    sách và giải đáp thắc mắc nhanh nhất .
+                    Hãy truy cập trang web của <span>2TM Books</span> ngay hôm nay và bắt đầu khám phá thế giới sách !
+                </p>
+                <a href="gioithieu.html" class="btn">Tìm hiểu thêm</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="./image/slide1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/slide2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/slide3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/slide1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/slide2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/slide3.jpg" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="flash-sale">
+        <div class="sp-flashsale">
+            <div class="text-flashsale">
+                <img src="./image/FLASH_SALE.png" style="width: 350px">
+                <div id="countdown" class="countdown">
+                    <div class="time">
+                        <h2 id="days"></h2>
+                        <small>Ngày</small>
+                    </div>
+
+                    <div class="time">
+                        <h2 id="hours"></h2>
+                        <small>Giờ</small>
+                    </div>
+
+                    <div class="time">
+                        <h2 id="minutes"></h2>
+                        <small>Phút</small>
+                    </div>
+
+                    <div class="time">
+                        <h2 id="seconds"></h2>
+                        <small>Giây</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="products container" id="products">
+            <button id="saveButton"></button>
+            <div class="product-container" id="productList3">
+                <!-- hiển thị sản phẩm, từng box -->
+            </div>
+
+        </div>
+        <script type="module" src="/script/products.js"></script>
+    </section>
+
+    <section class="product p" id="product">
+        <h2> SẢN PHẨM NỔI BẬT</h2>
+        <hr>
+        <div class="product-container" id="product-container">
+            <button id="saveButton"></button>
+            <div class="product-container" id="productList4">
+                <!-- hiển thị sản phẩm, từng box -->
+            </div>
+
+        </div>
+        <script type="module" src="/script/products.js"></script>
+    </section>
+
+    <section class="sp">
+        <div class="xemthemsp">
+            <a href="sanpham.html"><button>XEM THÊM SẢN PHẨM <i class="fa-solid fa-angles-right"></i></i></button></a>
+        </div>
+    </section>
+
+    <section class="new">
+        <h1> TIN TỨC NỔI BẬT </h1>
+        <hr>
+        <div class="news container">
+            <div class="news-left-column">
+                <div class="news-item">
+                    <!-- Nội dung của tin tức 1 -->
+                    <a href="https://vnexpress.net/tap-bien-khao-biem-hoa-tren-bao-chi-sai-gon-truoc-1975-4722354.html">
+                        <img src="./image/họa biếm.jpg" style="width: 400px;height: 600px; border-radius: 20px;">
+                    </a>
+                    <h2>Tập biên khảo 'Biếm họa trên báo chí Sài Gòn trước 1975'</h2>
+                </div>
+            </div>
+            <div class="news-right-column">
+                <div class="news-item">
+                    <!-- Nội dung của tin tức 2 -->
+                    <a href="https://vnexpress.net/a-dao-khao-cuu-ve-nghe-thuat-ca-tru-4726402.html">
+                        <img src="./image/a-dao.jpg" style="width: 750px; height:280px;border-radius: 20px;"></a>
+                    <h2>'Ả đào' - khảo cứu về nghệ thuật ca trù</h2>
+
+                </div>
+                <div class="news-item">
+                    <!-- Nội dung của tin tức 4 -->
+                    <a href="https://vnexpress.net/ra-mat-tron-bo-45-quyen-lich-su-van-minh-the-gioi-4731735.html">
+                        <img src="./image/45 - Copy.jpg" style="width: 750px; height:250px;border-radius: 20px;"></a>
+                    <h2>Ra mắt trọn bộ 45 quyển 'Lịch sử văn minh thế giới'</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="xemthemtintuc">
+            <a href="tintuc.html"><button>XEM THÊM <i class="fa-solid fa-angles-right"></i></i></button></a>
+        </div>
+    </section>
+
+    <section class="danhgia">
+        <h1> TẠI SAO NÊN CHỌN 2TM BOOKS? </h1>
+        <hr>
+        <div class="danhgia-container">
+            <div class="box">
+                <img src="./image/vanchuyen.png" alt="">
+                <h2>MIỄN PHÍ VẬN CHUYỂN</h2>
+                <p>Giao hàng nhanh, miễn phí</p>
+            </div>
+            <div class="box">
+                <img src="./image/trahang.jpg" alt="">
+                <h2>10 NGÀY TRẢ HÀNG</h2>
+                <p>Trả hàng, hoàn tiền trong vòng 10 ngày</p>
+            </div>
+            <div class="box">
+                <img src="./image/thanhtoan.jpg" alt="">
+                <h2>THANH TOÁN BẢO MẬT</h2>
+                <p>Thanh toán an toàn, tiện lợi, nhanh chóng</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Tải App</h2>
+                    <p>Tải xuống App cho Android và IOS.</p>
+                    <div class="app-logo">
+                        <img src="./image/app-2store.png">
+                        <img src="./image/google-play-png-logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./image/logo_2tm.png">
+                </div>
+
+                <div class="footer-col-3">
+                    <h2>Thông tin liên hệ</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM</li>
+                        <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                        <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright© 2024</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/cart.js"></script>
+    <script src="/script/user.js"></script>
+</body>
+
+</html>

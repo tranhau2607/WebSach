@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>2TM BOOKS</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo"> <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <a href="giohang.html">
+                <div class="fa fa-solid fa-shopping-cart" id="cart-btn"><span class="totalQuantity"></span></div>
+            </a>
+            
+            <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+            <a href="login.html" id="login-link">
+                <div id="login-btn" class="fa fa-solid fa-user"></div>
+            </a>
+            <div id="User" class="User" style="display: none">
+                <div class="moxuong">
+                    <button class="mo"></button>
+                    <div class="moxuong-content">
+                        <a href="#">Thông tin đơn hàng</a>
+                        <a href="#">Thông tin cá nhân</a>
+                        <a id="logoutBtn" href="">Đăng xuất</a>
+
+                    </div>
+                </div>
+                <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+                <script type="module" src="/script/user.js"></script>
+            </div>
+
+
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm...">
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class="gioithieu">
+        <h1> 2TM BOOKS </h1>
+        <h2> Thiên đường sách cho mọi nhà </h2>
+    </div>
+    <div class="about container">
+        <p> 2TM Books hân hạnh được chào đón bạn đến với thế giới sách muôn màu, nơi tri thức và niềm đam mê đọc sách
+            được kết nối.
+            Chúng tôi là trang web bán sách trực tuyến uy tín, chuyên cung cấp đa dạng các loại sách thuộc nhiều thể
+            loại khác nhau,
+            đáp ứng nhu cầu đọc sách của mọi lứa tuổi.</p>
+        <p> Với phương châm "Mang tri thức đến mọi nhà", 2TM Books không ngừng nỗ lực để mang đến cho khách hàng trải
+            nghiệm mua sắm sách online tiện lợi,
+            nhanh chóng và giá cả cạnh tranh nhất.</p>
+        <img src="./image/about1.jpg" alt="">
+
+
+        <h4> Tại 2TM Books, bạn có thể: </h4>
+        <ul>
+            <li> Khám phá kho tàng sách khổng lồ với nhiều đầu sách thuộc mọi thể loại,
+                từ sách văn học, sách kỹ năng sống đến sách thiếu nhi, sách tâm lý...
+                Chúng tôi luôn cập nhật liên tục những cuốn sách mới nhất, hot nhất trên thị trường để đáp ứng nhu cầu
+                đa dạng của khách hàng. </li>
+            <li> Tìm kiếm sách dễ dàng theo tên sách, tác giả, nhà xuất bản, thể loại...
+                chỉ với vài cú nhấp chuột. Bạn cũng có thể sử dụng các bộ lọc để thu hẹp phạm vi tìm kiếm và nhanh chóng
+                tìm được cuốn sách ưng ý. </li>
+            <li> Đọc mô tả chi tiết và đánh giá của khách hàng về từng cuốn sách trước khi mua.
+                Ngoài ra, bạn còn có thể tham khảo thêm đánh giá của những khách hàng đã mua sách để có thêm thông tin
+                trước khi mua. </li>
+            <li> Mua sách online tiện lợi, nhanh chóng với nhiều hình thức thanh toán an toàn.
+                Quá trình mua sắm được tối giản hóa, giúp bạn tiết kiệm thời gian và công sức. </li>
+            <li> Giao hàng tận nơi miễn phí trên toàn quốc.
+                Bạn sẽ nhận được sách nhanh chóng và tiện lợi mà không cần tốn bất kỳ khoản phí nào.</li>
+            <li> Nhận được nhiều ưu đãi hấp dẫn dành cho khách hàng thân thiết.
+                Bạn có thể tham gia các chương trình này để mua sách với giá ưu đãi nhất.
+            </li>
+        </ul>
+        <img src="./image/about2.jpg" alt="">
+        <h4> 2TM Books cam kết: </h4>
+        <ul>
+            <li> Cung cấp sách chính hãng, chất lượng cao từ các nhà xuất bản uy tín.
+                Tất cả các sách đều được kiểm tra kỹ lưỡng trước khi đến tay khách hàng. </li>
+            <li> Giá cả cạnh tranh nhất thị trường.
+                Chúng tôi cam kết mang đến cho bạn những cuốn sách giá tốt nhất mà vẫn đảm bảo chất lượng. </li>
+            <li> Dịch vụ khách hàng chuyên nghiệp, hỗ trợ 24/7.
+                2TM Books sở hữu đội ngũ nhân viên tư vấn nhiệt tình, chu đáo, luôn sẵn sàng hỗ trợ khách hàng
+                giải đáp mọi thắc mắc và tư vấn lựa chọn sách phù hợp. Chúng tôi luôn nỗ lực để mang đến cho khách hàng
+                trải nghiệm mua sắm tốt nhất. </li>
+        </ul>
+        <h4> Hãy đến với 2TM Books để khám phá niềm vui đọc sách và trau dồi kiến thức cho bản thân! </h4>
+
+        <h3> <span>2TM BOOKS</span> - MANG TRI THỨC ĐẾN MỌI NHÀ!</h3>
+    </div>
+
+    <div class="team container">
+        <span> ĐỘI NGŨ CỦA 2TM BOOKS </span>
+    </div>
+    <div class="team2 container">
+        <h3> Chào mừng bạn đến với đội ngũ của 2TM Books!</h3>
+        <h3> Chúng tôi là một nhóm đam mê với nhiệt huyết và lòng đam mê với văn hóa đọc sách.
+            Đội ngũ của chúng tôi bao gồm các chuyên gia về văn học, biên tập viên, nhà xuất bản và
+            những người đam mê công nghệ. Với mỗi cuốn sách, chúng tôi cam kết mang đến sự tận tâm và sự chuyên nghiệp
+            cao nhất. </h3>
+    </div>
+    <div class="doingu container">
+        
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Tải App</h2>
+                    <p>Tải xuống App cho Android và IOS.</p>
+                    <div class="app-logo">
+                        <img src="./image/app-2store.png">
+                        <img src="./image/google-play-png-logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./image/logo_2tm.png">
+                </div>
+
+                <div class="footer-col-3">
+                    <h2>Thông tin liên hệ</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM</li>
+                        <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                        <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright© 2024</p>
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+    <script src="/script/cart.js"></script>
+    <script>window.addEventListener('DOMContentLoaded', () => {
+        updateCartQuantityDisplay();
+      });</script>
+</body>
+
+</html>

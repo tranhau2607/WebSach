@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style/styles.css">
+    <!-- Bootstrap -->
+
+    <!-- nouislider -->
+
+    <title>TẤT CẢ SẢN PHẨM</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo"> <i class="fa-brands fa-leanpub"></i> <span>2TM</span> BOOKS</a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioithieu.html">Giới thiệu</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="tintuc.html">Tin tức</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+        
+        <div class="icons">
+
+            <a href="giohang.html">
+                <div class="fa fa-solid fa-shopping-cart" id="cart-btn"><span class="totalQuantity"></span></div>
+              </a>
+            <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+            <a href="login.html" id="login-link">
+                <div id="login-btn" class="fa fa-solid fa-user"></div>
+            </a>
+            <div id="User" class="User" style="display: none">
+                <div class="moxuong">
+                    <button class="mo"></button>
+                    <div class="moxuong-content">
+                        <a id="userName" href="#">Xin chào</a>
+                 
+                        <a href="#">Thông tin đơn hàng</a>
+                        <a href="#">Thông tin cá nhân</a>
+                        <a id="logoutBtn" href="">Đăng xuất</a>
+
+                    </div>
+                </div>
+                <!--Dùng để thay icon đăng nhập, xem thông tin của khách hàng-->
+                <script type="module" src="/script/user.js"></script>
+            </div>
+
+
+            <div class="fa fa-solid fa-search" id="search-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Nhập sách cần tìm...">
+            <label for="search-box" class="fa fa-solid fa-search"></label>
+        </form>
+    </header>
+
+    <div class="thansp"></div>
+    <div class="containersp container">
+        <div class="heading">
+            <h2><a href="index.html">TRANG CHỦ /</a> tất cả sản phẩm</h2>
+        </div>
+        <div class="search-sp">
+            <select name="" id="">
+                <option value="">Mặc định</option>
+                <option value="">Mới nhất</option>
+                <option value="">Mua nhiều nhất</option>
+                <option value="">Theo giá: Thấp đến cao</option>
+                <option value="">Theo giá: Cao đến thấp</option>
+            </select>
+        </div>
+    </div>
+    <section class="product-small" id="product-small">
+        <div class="search_tt">
+            <div id="search-bar">
+                <form id="search_form">
+                    <input type="text" placeholder="Tìm kiếm..." required="" id="searchInput">
+                    <button id="searchButton"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <h1>Danh mục sản phẩm</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Sách văn học</a></li>
+                    <li><a href="#">Sách kỹ năng sống</a></li>
+                    <li><a href="#">Sách tâm lý</a></li>
+                </ul>
+            </div>
+            <h1>Lọc sản phẩm</h1>
+            <div>
+                <div class="loc check">
+                    <h3>Lọc theo giá</h3>
+                    <div class="loc-tien">
+                        <div class="loc-tien-contenr">
+                            <h4>Từ</h4>
+                            <select name="" id="">
+                                <option value="">50.000đ</option>
+                                <option value="">100.000đ</option>
+                                <option value="">150.000đ</option>
+                                <option value="">200.000đ</option>
+                            </select>
+                        </div>
+                        <div class="loc-tien-contenr">
+                            <h4>Đến</h4>
+                            <select name="" id="">
+                                <option value="">50.000đ</option>
+                                <option value="">100.000đ</option>
+                                <option value="">150.000đ</option>
+                                <option value="">200.000đ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1> ĐÁNH GIÁ </h1>
+            <div class="comment-container">
+                <ul class="comments">
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt1.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Mỹ Len</span>
+                            <span class="time">2 minutes ago</span>
+                        </div>
+                        <div class="content">shop bán nhiều sách hay quá nè </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/av4.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Tiểu Hí</span>
+                            <span class="time">5 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi </div>
+                    </li>
+
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt5.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Hồng Nguyễn</span>
+                            <span class="time">10 minutes ago</span>
+                        </div>
+                        <div class="content">mua sách ở đây ưng lắm</div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt6.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Mỹ Dẹo</span>
+                            <span class="time">12 minutes ago</span>
+                        </div>
+                        <div class="content">thích nhất cuốn Người tập lớn</div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/harry lu.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Harry Lu</span>
+                            <span class="time">15 minutes ago</span>
+                        </div>
+                        <div class="content">Web mà Lu mua sách nhiều nhất </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/jack xi ca.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Jen ni phơ</span>
+                            <span class="time">15 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/jjj.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Jéch xi cà</span>
+                            <span class="time">15 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt7.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Dương Lê</span>
+                            <span class="time">18 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt6.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Giang Nguyễn</span>
+                            <span class="time">20 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+                    <li class="comment">
+                        <img class="avatar" src="./image/avt10.jpg" alt="Avatar">
+                        <div class="info">
+                            <span class="name">Mộng Chè</span>
+                            <span class="time">20 minutes ago</span>
+                        </div>
+                        <div class="content">Mình mua sách ở đây mấy lần rồi chất lượng quá </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- store products -->
+        <!-- button này dùng để lưu danh sách sản phẩm trong mảng đẩy lên DB,mới vào phải click vào button để load sản phẩm, 
+            sau đó chỉ cần xóa tên là OK -->
+        <!-- VUI LÒNG KHÔNG XÓA BUTTON NÀY -->
+        <button id="saveButton"></button>
+        <!-- ---------------------------- -->
+        <div class="product_right">
+            <div class="product-container2" id="productList">
+                <!-- hiển thị sản phẩm, từng box -->
+            </div>
+        </div>
+        <script type="module" src="/script/products.js"></script>
+   
+    </section>
+    <div class="trangsp2">
+        <a href="sanpham.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="sanpham.html"> 1 </a>
+        <a href="sanpham2.html"> 2 </a>
+        <a href="sanpham2.html"><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <section class="danhgia2">
+        <h2>PHẢN HỒI TỪ KHÁCH HÀNG</h2>
+        <div class="danhgia-container">
+            <div class="box">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <p>Sản phẩm tuyệt vời</p>
+                <h3>Hải</h3>
+                <img src="./image/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Sách chất lượng, giá cả hợp lý</p>
+                <h3>Hiếu</h3>
+                <img src="./image/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <p>Tốt</p>
+                <h3>Hoa</h3>
+                <img src="./image/rev3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Tải App</h2>
+                    <p>Tải xuống App cho Android và IOS.</p>
+                    <div class="app-logo">
+                        <img src="./image/app-2store.png">
+                        <img src="./image/google-play-png-logo.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="./image/logo_2tm.png">
+                </div>
+
+                <div class="footer-col-3">
+                    <h2>Thông tin liên hệ</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 140 Đ. Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM</li>
+                        <li><i class="fa-solid fa-phone"></i> 0364983427 </li>
+                        <li><i class="fa-solid fa-envelope"></i> 2tmbooks@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright© 2024</p>
+        </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/script/login.js"></script>
+    <script src="/script/cart.js"></script>
+    
+    
+</body>
+
+</html>
